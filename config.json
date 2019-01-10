@@ -1,0 +1,28 @@
+# This is an example on how to load the plugin in the config.json. It is NOT the complete config file of Pimatic!
+
+"plugins": [
+  {
+    "plugin": "chronotherm"
+  }
+],
+
+"devices": [
+  {
+    "id": "provacas",
+    "class": "ChronoThermDevice",
+    "name": "Chrono Therm",
+    "cas1Ref": "$giorno1",
+    "cas2Ref": "$giorno2",
+    "cas3Ref": "$giorno3",
+    "cas4Ref": "$giorno4",
+    "cas5Ref": "$giorno5",
+    "cas6Ref": "$giorno6",
+    "cas7Ref": "$giorno7",
+    "boost": true,
+    "realtemperature": "$realtemperature",
+    "interval": 240,
+    "offtemperature": 4,
+    "ontemperature": 21
+    "valve": "$rele"
+  }
+]

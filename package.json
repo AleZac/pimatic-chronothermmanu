@@ -1,0 +1,55 @@
+{
+  "name": "pimatic-chronotherm",
+  "description": "Chrono plugin for weekly schedule ",
+  "author": {
+    "name": "Alessandro Zaccaria",
+    "url": "https://github.com/AleZac"
+  },
+  "contributors": [
+    {
+    }
+  ],
+  "main": "chronotherm",
+  "files": [
+    "chronotherm.coffee",
+    "README.md",
+    "LICENSE",
+    "chronotherm-config-schema.coffee",
+    "device-config-schema.coffee",
+    "app/ct-page.coffee",
+    "app/ct.css",
+    "app/ct.html"
+  ],
+  "keywords": [
+    "Cron",
+    "Pimatic",
+    "thermostat"
+  ],
+  "version": "0.9.8-10",
+  "homepage": "https://github.com/AleZac/pimatic-chronotherm",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AleZac/pimatic-chronotherm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AleZac/pimatic-chronotherm/issues"
+  },
+  "license": "GPL-2.0",
+  "maintainers": [
+    {
+      "name": "Zacca",
+      "url": "https://github.com/AleZac"
+    }
+  ],
+  "configSchema": "chronotherm-config-schema.coffee",
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "pimatic": ">=0.8.0 <1.0.0"
+  },
+  "engines": {
+    "node": ">0.8.x",
+    "npm": ">1.1.x"
+  }
+}
