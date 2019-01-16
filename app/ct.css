@@ -1,17 +1,9 @@
-#index li.chronothermdevice {
+#index li.chronothermmanudevice {
     text-align: left;
     line-height: 30px;
 }
-/* ERRORE */
-#index li.chronothermdevice .errore_web{
-  text-align: center;
-  color: red;
-  width: 100%;
-  float: left;
-  font-weight: bold;
-}
 /*PULSANTI*/
-#index li.chronothermdevice .aprichiudiprogram{
+#index li.chronothermmanudevice .aprichiudiprogram{
   position: absolute;
   top: 35px;
   left: 35px;
@@ -20,14 +12,14 @@
   border-radius: 20px;
   background-color: green;
 }
-#index li.chronothermdevice .aprichiudiprogram:after{
+#index li.chronothermmanudevice .aprichiudiprogram:after{
   position: absolute;
   top: 12px;
   left: 12px;
   width: 18px;
   height: 18px;
 }
-#index li.chronothermdevice .box-gradi-tondo{
+#index li.chronothermmanudevice .box-gradi-tondo{
   color: white;
   border-radius: 50%;
   text-align: center;
@@ -35,7 +27,7 @@
   margin: 5px;
   margin-left: 10px;
 }
-#index li.chronothermdevice .tempEffettiva {
+#index li.chronothermmanudevice .tempEffettiva {
   width: 70px;
   height: 70px;
   line-height: 70px;
@@ -43,14 +35,14 @@
   font-size: 1.4em;
   font-weight: bold;
 }
-#index li.chronothermdevice .tempPresunta {
+#index li.chronothermmanudevice .tempPresunta {
   width: 72px;
   height: 72px;
   line-height: 56px;
   font-size: 1.1em;
   margin-top: 10px;
 }
-#index li.chronothermdevice .inttempPresunta {
+#index li.chronothermmanudevice .inttempPresunta {
   width: 54px;
   height: 54px;
   position: relative;
@@ -58,21 +50,21 @@
   top: 8px;
   border-radius: 50%;
 }
-#index li.chronothermdevice .tempPresuntalight {
+#index li.chronothermmanudevice .tempPresuntalight {
   width: 56px;
   height: 56px;
   line-height: 56px;
   font-size: 1.1em;
   margin-top: 10px;
 }
-#index li.chronothermdevice div.controls {
+#index li.chronothermmanudevice div.controls {
   max-width: 100%;
   margin: 0;
   overflow: hidden;
   text-align: right;
   white-space: normal;
 }
-#index li.chronothermdevice div.controls .ui-controlgroup {
+#index li.chronothermmanudevice div.controls .ui-controlgroup {
   display: inline-block;
   margin: 0;
   margin-left: 4px;
@@ -82,7 +74,7 @@
   margin-bottom: 5px;
   border-radius: 50%;
 }
-#index li.chronothermdevice .stagione{
+#index li.chronothermmanudevice .stagione{
   display: inline-block;
   font-size: 13px;
   -ms-transform: rotate(90deg); /* IE 9 */
@@ -94,51 +86,51 @@
   cursor: pointer;
 }
 /*GRAFICO*/
-#index li.chronothermdevice .globale{
+#index li.chronothermmanudevice .globale{
     width: 100%;
     float: left;
     margin-top: 50px;
 }
-#index li.chronothermdevice .graph {
+#index li.chronothermmanudevice .graph {
     position: relative;
     width: 100%;
     height: 100px;
 }
-#index li.chronothermdevice .orari {
+#index li.chronothermmanudevice .orari {
     position: relative;
     width: 100%;
     height: 20px;
     line-height: 20px;
 }
-#index li.chronothermdevice .bar {
+#index li.chronothermmanudevice .bar {
     position: absolute;
     bottom: 0;
     background: linear-gradient(to top, green 0%, red 85px);
     border-radius: 2px 2px 0 0;
     font-weight: bold;
 }
-#index li.chronothermdevice .linea {
+#index li.chronothermmanudevice .linea {
     position: absolute;
     border-left: 1px solid green;
 }
-#index li.chronothermdevice .orari span {
+#index li.chronothermmanudevice .orari span {
     font-size: 0.7em;
     margin: 2px;
 }
-#index li.chronothermdevice .graph span {
+#index li.chronothermmanudevice .graph span {
     position: absolute;
     margin-top: -26px;
     width: 100%;
     text-align: center;
 }
 /*GRAFICO 2*/
-#index li.chronothermdevice .graph1 {
+#index li.chronothermmanudevice .graph1 {
     position: relative;
     width: 100%;
     /*height: 100px;*/
     margin-top: 10px;
 }
-#index li.chronothermdevice .bar1 {
+#index li.chronothermmanudevice .bar1 {
     position: absolute;
     bottom: 0;
     border-radius: 2px 2px 0 0;
@@ -148,29 +140,29 @@
     text-align: center;
 }
 /*TIMEOUT*/
-#index li.chronothermdevice .nascondi{
+#index li.chronothermmanudevice .nascondi{
   display: none;
 }
-#index li.chronothermdevice .puls-mezzo-acceso{
+#index li.chronothermmanudevice .puls-mezzo-acceso{
   background-color: green;
 }
-#index li.chronothermdevice .timeoutinput{
+#index li.chronothermmanudevice .timeoutinput{
   text-align: center;
   width: 110px;
   font-weight: bold;
   color: green;
 }
-#index li.chronothermdevice .timeoutgruppo{
+#index li.chronothermmanudevice .timeoutgruppo{
   margin: 5px;
 }
-#index li.chronothermdevice .ui-first-child{
+#index li.chronothermmanudevice .ui-first-child{
   border-radius: 20px 0 0 20px;
 }
-#index li.chronothermdevice .ui-last-child{
+#index li.chronothermmanudevice .ui-last-child{
   border-radius: 0 20px 20px 0;
 }
 /*Clock*/
-#index li.chronothermdevice .segna-orario{
+#index li.chronothermmanudevice .segna-orario{
   position: absolute;
   bottom: 135px;
   width: 25%;
@@ -179,14 +171,14 @@
   border-bottom: 2px solid rgba(0,128,0,0.5);
   font-size: 12px;
 }
-#index li.chronothermdevice .bandella-orario{
+#index li.chronothermmanudevice .bandella-orario{
   position: absolute;
   bottom: 0;
   width: 2px;
   height: 137px;
   background-color: rgba(0,128,0,0.5);
   }
-  #index li.chronothermdevice .input-segna-orario{
+  #index li.chronothermmanudevice .input-segna-orario{
     position: absolute;
     bottom: 122px;
     width: 25%;
@@ -195,7 +187,7 @@
     border-bottom: 2px solid rgba(255,0,0,0.5);
     font-size: 12px;
   }
-  #index li.chronothermdevice .input-bandella-orario{
+  #index li.chronothermmanudevice .input-bandella-orario{
     position: absolute;
     bottom: 0;
     width: 2px;
@@ -203,15 +195,15 @@
     background-color: rgba(255,0,0,0.5);
   }
 /*Clock - Light*/
-  #index li.chronothermdevice .inputb-light{
+  #index li.chronothermmanudevice .inputb-light{
     height: 25px;
   }
-  #index li.chronothermdevice .inputs-light{
+  #index li.chronothermmanudevice .inputs-light{
     bottom: 25px;
   }
-  #index li.chronothermdevice .bandella-light{
+  #index li.chronothermmanudevice .bandella-light{
     height: 40px;
   }
-  #index li.chronothermdevice .segna-light{
+  #index li.chronothermmanudevice .segna-light{
     bottom: 40px;
   }
