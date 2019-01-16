@@ -1,7 +1,7 @@
 module.exports = {
-  title: "pimatic-chronotherm device config schemas"
-  ChronoThermDevice: {
-    title: "ChronoThermDevice config options"
+  title: "pimatic-chronothermmanu device config schemas"
+  ChronoThermManuDevice: {
+    title: "ChronoThermManuDevice config options"
     type: "object"
     extensions: ["xLink", "xAttributeOptions"]
     properties:

@@ -2,15 +2,15 @@
 
 "plugins": [
   {
-    "plugin": "chronotherm"
+    "plugin": "ChronoThermManuDevice"
   }
 ],
 
 "devices": [
   {
     "id": "provacas",
-    "class": "ChronoThermDevice",
-    "name": "Chrono Therm",
+    "class": "ChronoThermManuDevice",
+    "name": "Chrono Therm Manual",
     "cas1Ref": "$giorno1",
     "cas2Ref": "$giorno2",
     "cas3Ref": "$giorno3",

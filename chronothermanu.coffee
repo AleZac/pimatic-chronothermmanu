@@ -6,14 +6,14 @@ module.exports = (env) ->
   M = env.matcher
 
 
-  class ChronoThermPlugin extends env.plugins.Plugin
+  class ChronoThermManuPlugin extends env.plugins.Plugin
 
     init: (app, @framework, @config) =>
       deviceConfigDef = require("./device-config-schema")
-      @framework.deviceManager.registerDeviceClass("ChronoThermDevice", {
+      @framework.deviceManager.registerDeviceClass("ChronoThermManuDevice", {
         configDef: deviceConfigDef.ChronoThermDevice,
         createCallback: (config, lastState, framework) ->
-          return new ChronoThermDevice(config, lastState)
+          return new ChronoThermManuDevice(config, lastState)
       })
 
       @framework.ruleManager.addActionProvider(new ChronoThermSeasonActionProvider(@framework))
@@ -23,13 +23,13 @@ module.exports = (env) ->
       # Check if the mobile-frontent was loaded and get a instance
         mobileFrontend = @framework.pluginManager.getPlugin 'mobile-frontend'
         if mobileFrontend?
-          mobileFrontend.registerAssetFile 'js', "pimatic-chronotherm/app/ct-page.coffee"
-          mobileFrontend.registerAssetFile 'css', "pimatic-chronotherm/app/ct.css"
-          mobileFrontend.registerAssetFile 'html', "pimatic-chronotherm/app/ct.html"
+          mobileFrontend.registerAssetFile 'js', "pimatic-chronothermmanu/app/ct-page.coffee"
+          mobileFrontend.registerAssetFile 'css', "pimatic-chronothermmanu/app/ct.css"
+          mobileFrontend.registerAssetFile 'html', "pimatic-chronothermmanu/app/ct.html"
         else
           env.logger.warn "your plugin could not find the mobile-frontend. No gui will be available"
 
-  class ChronoThermDevice extends env.devices.Device
+  class ChronoThermManuDevice extends env.devices.Device
 
     cas1: 0
     cas2: 0
@@ -153,7 +153,7 @@ module.exports = (env) ->
         params:
           mintoautomode:
             type: "number"
-    template: "ChronoThermDevice"
+    template: "ChronoThermManuDevice"
 
     constructor: (@config, lastState, framework) ->
       @id = @config.id
@@ -721,5 +721,5 @@ module.exports = (env) ->
     # ### executeRestoreAction()
     executeRestoreAction: (simulate) => Promise.resolve(@_doExecuteAction(simulate, @lastValue))
 
-  plugin = new ChronoThermPlugin
+  plugin = new ChronoThermManuPlugin
   return plugin
