@@ -1,7 +1,8 @@
 #Pimatic ChronoTherm
 Manual thermostat plugin for the Pimatic
 
-![alt tag](https://github.com/AleZac/pimatic-chronotherm/blob/master/screenshot/ChronoThermManu.png)
+![alt tag](https://github.com/AleZac/pimatic-chronothermmanu/blob/master/screenshot/ChronoThermManu.png)
+
 
 This is the same version of ChronoTherm but I have eliminated all the automatic part leaving only the manual mode.
 For information, read the readme of the ChronoTherm plugin
